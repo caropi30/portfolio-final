@@ -1,0 +1,137 @@
+
+/*Body*/
+
+@mixin home-body {
+    font-family: $montserrat;
+    background-image: url(../assets/img/logo_camipi.svg);
+    background-repeat: no-repeat;
+    background-color: $base-color;
+}
+@mixin body-background-imagotype {
+    font-family: $montserrat;
+    background-image: url(../assets/img/imagotype_camipi.svg);
+    background-repeat: no-repeat;
+    background-color: $base-color;
+}
+
+@mixin body-background-isotype {
+    font-family: $montserrat;
+    background-image: url(../assets/img/isotype_camipi.svg);
+    background-repeat: no-repeat;
+    background-color: $base-color;
+}
+
+@mixin body-background-img-none {
+    font-family: $montserrat;
+    background-image: none;
+    background-repeat: no-repeat;
+    background-color: $base-color;
+}
+
+/*Header / Navigation*/
+@mixin header {
+    header {
+        margin: 2rem;
+        padding: 2rem;
+        width: 70%;
+        margin: 0 auto;
+    
+        h2 {
+            color: #E91E63;
+            font-size: 1.5rem;
+        }
+        
+        h3 {
+            color: #fff;
+            font-size: 1rem;
+        } 
+    }  
+} 
+
+@mixin collapse-base-color {
+    .collapse {
+        background-color: $base-color;
+    }
+}
+
+@mixin collapse-primary-color {
+    .collapse {
+        background-color: $primary-color;
+        padding: 2rem;
+        font-size: large;  
+    }
+}
+
+@mixin navlink {
+    .nav-link {
+    color: $secondary-color;
+    font-weight: $bold;
+    }
+}
+
+@mixin nav-hover {
+    .nav-link:hover{
+        color: #E91E63;
+        font-weight: bold;
+    }
+}
+
+@mixin second-nav {
+    .secondNavbar  {
+        display: flex;
+        align-items: center;
+        color: $secondary-color;
+        padding-top: 2rem;
+    }
+}
+
+@mixin second-nav-hidden {
+    nav.secondNavbar  {
+        display: none;
+    }
+}
+
+/*Main*/
+@mixin main-style {
+    main {
+        padding-left: 3rem;
+        margin-left: 2rem;
+        color: $secondary-color;
+    }
+}
+
+@mixin main-second-style {
+    main {
+        padding: 0 2rem;
+        margin: 2rem;
+    }
+}
+
+/*Biography Page*/
+
+/*What I Do Page*/
+
+/*Work Page*/
+@mixin work-gallery-grid-bg {
+    .work {
+        &__Gallery {
+            &-items tbody{
+                display:grid;
+                grid-template-columns: 100%;
+                grid-template-rows: 50% 50%;
+            }
+        }
+
+    }
+}
+
+@mixin work-gallery-grid-md {
+    .work {
+        &__Gallery {
+            &-items tbody tr{
+               display: flex;
+               flex-direction: column; 
+            }
+        }
+    }
+}

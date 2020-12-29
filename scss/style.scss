@@ -1,0 +1,28 @@
+/*Utilities Folder*/
+@import 'utilities/variables';
+@import 'utilities/mixins';
+
+/*Base Folder*/
+@import 'base/typography';
+@import 'base/animations';
+@import 'base/reset';
+
+/*Components Folder*/
+@import 'components/buttons';
+
+/*Layout Folder*/
+@import 'layout/homeBody';
+@import 'layout/pageBody';
+@import 'layout/contactBody';
+@import 'layout/header';
+@import 'layout/footer';
+
+/*Pages Folder*/
+@import 'pages/home';
+@import 'pages/biography';
+@import 'pages/what-i-do';
+@import 'pages/work';
+@import 'pages/contact';
+
+
+

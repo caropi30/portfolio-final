@@ -1,0 +1,113 @@
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) and (max-width: 767.98px) {
+    .whatIDo {
+        padding-top: 1.5rem;
+
+        &__Title {
+            display: block;
+
+            h2{
+                display: inline-flex;
+                padding-right: 1rem;
+                font-size: 3rem;
+                font-weight: $bold;
+        
+            }
+        }
+
+        &__Items {
+            &-Pink {
+                color: $primary-color;
+            }
+
+            &-Item {
+                padding-top: 4rem;
+            }
+        }      
+    }
+}
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) and (max-width: 991.98px) {
+    @include main-second-style;
+    .whatIDo {
+        padding-top: 1.5rem;
+
+        &__Title {
+            display: block;
+
+            h2{
+                display: inline-flex;
+                padding-right: 1rem;
+                font-size: 3rem;
+                font-weight: $bold;
+        
+            }
+        }
+
+        &__Items {
+            &-Pink {
+                color: $primary-color;
+            }
+
+            &-Item {
+                padding-top: 4rem;
+            }
+        }      
+    }
+}
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) and (max-width: 1199.98px) {
+    @include main-second-style;
+    .whatIDo {
+        padding-top: 1.5rem;
+
+        &__Title {
+            h2{
+                padding-right: 1rem;
+                font-size: 3em;
+            }
+        }
+
+        &__Items {
+            padding-top: 2rem;
+            display: flex;
+            &-Pink {
+                color: $primary-color;
+            }
+
+            &-Item {
+                padding-top: 2rem;
+            }
+        }      
+    }
+}
+
+// Extra large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) {
+    @include main-second-style;
+    .whatIDo {
+        padding-top: 1.5rem;
+
+        &__Title {
+            h2{
+                padding-right: 1rem;
+                font-size: 3em;
+            }
+        }
+
+        &__Items {
+            padding-top: 2rem;
+            display: flex;
+            &-Pink {
+                color: $primary-color;
+            }
+
+            &-Item {
+                padding-top: 2rem;
+            }
+        }      
+    }
+}
+

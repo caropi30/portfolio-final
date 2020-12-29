@@ -1,0 +1,41 @@
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) and (max-width: 767.98px) {
+    header {
+        @include header; 
+        @include navlink;
+        @include second-nav;
+        @include collapse-primary-color;
+    }
+}
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) and (max-width: 991.98px) {
+    header {
+        @include header; 
+        @include navlink;
+        @include second-nav;
+        @include collapse-primary-color;
+    }
+}
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) and (max-width: 1199.98px) {
+    header {
+        @include header; 
+        @include navlink;
+        @include nav-hover;
+        @include second-nav-hidden;
+        @include collapse-base-color;
+    }
+}
+
+// Extra large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) {
+    header {
+        @include header; 
+        @include navlink;
+        @include nav-hover;
+        @include second-nav-hidden;
+        @include collapse-base-color;
+    }
+}
