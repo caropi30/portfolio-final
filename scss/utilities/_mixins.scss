@@ -1,11 +1,12 @@
 
 /*Body*/
 
-@mixin home-body {
+@mixin body-background-logo-lg {
     font-family: $montserrat;
     background-image: url(../assets/img/logo_camipi.svg);
     background-repeat: no-repeat;
     background-color: $base-color;
+
 }
 @mixin body-background-imagotype {
     font-family: $montserrat;
