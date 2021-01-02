@@ -1,11 +1,13 @@
 
 /*Body*/
 @mixin body-background-logo-lg {
-    padding-top: 350px;
-    background-image: url(../assets/img/logo_camipi.svg);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-color: $base-color;
+    .homeBody {
+        padding-top: 350px;
+        background-image: url(../assets/img/logo_camipi.svg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-color: $base-color;
+    }
 }
 
 @mixin body-background-logo-rotate {
@@ -53,13 +55,13 @@
     }  
 } 
 
-@mixin home-header {
+/*@mixin home-header {
     .home {
         &__Header {
 
         }
     }
-}
+}*/
 
 @mixin contact-header {
     .contactHeader {
@@ -159,47 +161,239 @@
     display: grid;
 }
 
-@mixin work-container-size-xl {
+@mixin img-work-grid-sm {
     .work {
-        &_Gallery {
-            &-items {
-                width: 500px;
-                height: 300px;
+        &__GalleryItems {
+            &-row1 {
+                display: flex;
+                flex-direction: column;
+                justify-items: center;
+                .modop {
+                    width: 500px;
+                    height: 300px;
+                    background-image: url(../assets/img/modop.png);
+                    background-repeat: cover no-repeat;
+                    overflow: hidden;
+                    border-radius: 25px 25px 0 0;
+                }
+                .weemo {
+                    width: 500px;
+                    height: 300px;
+                    background-image: url(../assets/img/weemo.png);
+                    background-repeat: cover no-repeat;
+                    overflow: hidden;
+                }
             }
+
+            &-row2 {
+                .mydelivery {
+                    width: 500px;
+                    height: 300px;
+                    background-image: url(../assets/img/mydelivery.png);
+                    background-repeat: cover no-repeat;
+                    overflow: hidden;
+                    align-self: center;
+                }
+
+                .enelcito {
+                    width: 500px;
+                    height: 300px;
+                    background-image: url(../assets/img/enelcito.png);
+                    background-repeat: cover no-repeat;
+                    overflow: hidden;
+                }
+                .paygo {
+                    width: 500px;
+                    height: 300px;
+                    background-image: url(../assets/img/paygo.png);
+                    background-repeat: cover no-repeat;
+                    overflow: hidden;
+                    border-radius: 0 0 25px 25px;
+                }
+            }
+            
         }
     }
 }
 
-@mixin img-work-grid {
-    .modop {
-        width: 100%;
-        background-image: url(../assets/img/modop.png);
-        background-repeat: cover no-repeat;
-        overflow: hidden;
+@mixin img-work-grid-md {
+    .work {
+        &__GalleryItems {
+            align-content: center;
+
+            &-row1 {
+                display: flex;
+                flex-direction: column;
+                justify-items: center;
+                .modop {
+                    width: 600px;
+                    height: 300px;
+                    background-image: url(../assets/img/modop.png);
+                    background-repeat: cover no-repeat;
+                    overflow: hidden;
+                    border-radius: 25px 25px 0 0;
+                }
+                .weemo {
+                    width: 600px;
+                    height: 300px;
+                    background-image: url(../assets/img/weemo.png);
+                    background-repeat: cover no-repeat;
+                    overflow: hidden;
+                }
+            }
+
+            &-row2 {
+                .mydelivery {
+                    width: 600px;
+                    height: 300px;
+                    background-image: url(../assets/img/mydelivery.png);
+                    background-repeat: cover no-repeat;
+                    overflow: hidden;
+                }
+
+                .enelcito {
+                    width: 600px;
+                    height: 300px;
+                    background-image: url(../assets/img/enelcito.png);
+                    background-repeat: cover no-repeat;
+                    overflow: hidden;
+                }
+                .paygo {
+                    width: 600px;
+                    height: 300px;
+                    background-image: url(../assets/img/paygo.png);
+                    background-repeat: cover no-repeat;
+                    overflow: hidden;
+                    border-radius: 0 0 25px 25px;
+                }
+            }
+            
+        }
     }
-    .weemo {
-        width: 100%;
-        background-image: url(../assets/img/weemo.png);
-        background-repeat: cover no-repeat;
-        overflow: hidden;
+}
+
+@mixin img-work-grid-lg {
+    .work {
+        &__GalleryItems {
+            &-row1 {
+                display: flex;
+                .modop {
+                    width: 450px;
+                    height: 300px;
+                    background-image: url(../assets/img/modop.png);
+                    background-repeat: cover no-repeat;
+                    overflow: hidden;
+                    border-radius: 25px 0 0 0;
+                }
+                
+                .weemo {
+                    width: 450px;
+                    height: 300px;
+                    background-image: url(../assets/img/weemo.png);
+                    background-repeat: cover no-repeat;
+                    overflow: hidden;
+                    border-radius: 0 25px 0 0;
+                }
+            }
+
+            &-row2 {
+                width: 841px;
+                display: grid;
+                grid-template-rows: 1fr;
+                grid-template-columns: 33.3% 33.3% 33.3%;
+                grid-template-areas: "mydelivery enelcito paygo";
+
+                .mydelivery {
+                    grid-area: mydelivery;
+                    height: 300px;
+                    background-image: url(../assets/img/mydelivery-1.png);
+                    background-repeat: cover no-repeat;
+                    overflow: hidden;
+                    border-radius: 0 0 0 25px;
+                }
+
+                .enelcito {
+                    grid-area: enelcito;
+                    height: 300px;
+                    background-image: url(../assets/img/enelcito.png);
+                    background-repeat: cover no-repeat;
+                    overflow: hidden;
+                }
+                .paygo {
+                    grid-area: paygo;
+                    height: 300px;
+                    background-image: url(../assets/img/paygo-1.png);
+                    background-repeat: cover no-repeat;
+                    overflow: hidden;
+                    border-radius: 0 0 25px 0;
+                }
+                
+            }
+            
+        }
     }
-    .mydelivery {
-        width: 100%;
-        background-image: url(../assets/img/mydelivery.png);
-        background-repeat: cover no-repeat;
-        overflow: hidden;
-    }
-    .enelcito {
-        width: 100%;
-        background-image: url(../assets/img/enlcito.png);
-        background-repeat: cover no-repeat;
-        overflow: hidden;
-    }
-    .paygo {
-        width: 100%;
-        background-image: url(../assets/img/paygo.png);
-        background-repeat: cover no-repeat;
-        overflow: hidden;
+}
+
+
+@mixin img-work-grid-xl {
+    .work {
+        &__GalleryItems {
+            &-row1 {
+                display: flex;
+                .modop {
+                    width: 600px;
+                    height: 300px;
+                    background-image: url(../assets/img/modop.png);
+                    background-repeat: cover no-repeat;
+                    overflow: hidden;
+                    border-radius: 25px 0 0 0;
+                }
+
+
+                .weemo {
+                    width: 600px;
+                    height: 300px;
+                    background-image: url(../assets/img/weemo.png);
+                    background-repeat: cover no-repeat;
+                    overflow: hidden;
+                    border-radius: 0 25px 0 0;
+                }
+            }
+
+            &-row2 {
+                width: 1201px;
+                display: grid;
+                grid-template-rows: 1fr;
+                grid-template-columns: 33.3% 33.3% 33.3%;
+                grid-template-areas: "mydelivery enelcito paygo";
+
+                .mydelivery {
+                    grid-area: mydelivery;
+                    height: 300px;
+                    background-image: url(../assets/img/mydelivery.png);
+                    background-repeat: cover no-repeat;
+                    overflow: hidden;
+                    align-self: center;
+                    border-radius: 0 0 0 25px;
+                }
+
+                .enelcito {
+                    grid-area: enelcito;
+                    height: 300px;
+                    background-image: url(../assets/img/enelcito.png);
+                    background-repeat: cover no-repeat;
+                    overflow: hidden;
+                }
+                .paygo {
+                    grid-area: paygo;
+                    height: 300px;
+                    background-image: url(../assets/img/paygo.png);
+                    background-repeat: cover no-repeat;
+                    overflow: hidden;
+                    border-radius: 0 0 25px 0;
+                }
+            }
+        }
     }
 }
 
