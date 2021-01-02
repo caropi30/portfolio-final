@@ -18,7 +18,7 @@
         <link rel="stylesheet" type="text/css" href="../css/animate.css">
     </head>
     <body class="contactBody">
-        <header class="container-fluid pl-xl-5 ml-xl-5 ml-lg-5 pl-lg-1 px-md-5 mx-md-3 my-md-4 py-md-5 px-sm-5 py-sm-5">
+        <header class="contactHeader container-fluid pl-xl-5 ml-xl-5 ml-lg-5 pl-lg-1 px-md-5 mx-md-3 my-md-4 py-md-5 px-sm-5 py-sm-5">
             <div class="row d-flex d-xl-flex d-lg-flex d-md-flex flex-column px-xl-5 mx-xl-5 px-lg-1 pr-lg-5 pl-md-0 ml-md-0 pl-sm-4">
                 <nav class="navbar navbar-expand-lg d-flex row justify-content-between px-xl-5 mx-xl-5 pl-lg-1 pr-lg-5 mr-lg-3 pt-lg-5 ml-lg-5 pl-sm-1">
                     <div class="navTitle pl-lg-1">
@@ -56,81 +56,48 @@
                 </nav>   
             </div>
         </header>
-        <main class="container-fluid contact pl-xl-5 ml-xl-5">
-            <div class="row contact__Info d-block col-xl-9 pl-xl-5 pl-lg-4 pt-lg-5 ml-lg-5 pl-sm-1 ml-5 px-md-3 mx-md-4 mx-sm-0">
-                <section class="contact__Title col-xl-11 pl-xl-5 ml-xl-5">
+        <main class="container-fluid contact">
+            <div class="row contact__Info row d-block col-xl-11 pl-lg-3 pt-lg-5 ml-lg-5 pl-sm-1 ml-5 px-md-3 mx-md-4 mx-sm-0">
+                <section class="contact__Title col-xl-11 pl-xl-6 ml-xl-5 mr-xl-0">
                     <h2 class="pl-xl-5 ml-xl-5">Let's talk<span>!</span></h2>
                     <p class="pl-xl-5 ml-xl-5">Si necesitas más información sobre servicios y/o asesorías, déjame tu datos y me contactaré contigo.</p>
+                </section>   
+                <section class="contact__Form pl-xl-5 ml-xl-5 pl-md-3 px-sm-3">
+                    <form class="contact__FormItems d-flex d-sm-block pl-xl-6 ml-xl-5" name="contactForm" method="post" enctype="multipart/form-data">
+                        <div class="form-row contactForm__Items-item">
+                            <div class="col-md-4 mb-3">
+                                <label class="pink" for="contactName">Nombre</label>
+                                <input type="text" class="form-control is-valid contactFormItemsInputs" name="contactName" id="contactName" placeholder="Nombre" required="">
+                                <div class="valid-feedback pink">
+                                ¡Perfecto!
+                                </div>
+                            </div>
+                            <div class="col-md-4 mb-3 contact__FormItems-item">
+                                <label class="pink" for="contactMail">Correo electrónico</label>
+                                <input type="text" class="form-control is-valid contactFormItemsInputs" name="contactMail" id="contactMail" placeholder="Correo electrónico" required="">
+                                <div class="valid-feedback pink">
+                                    ¡Perfecto!
+                                </div>
+                            </div>
+                            <div class="align-self-center mx-2">
+                                <button type="submit" class="contact__FormItems-item btn btn-pink wow animate__animated animate__heartBeat mb-2 px-5    animated" data-toggle="modal" data-target="#ventanaModal" style="visibility: visible; animation-name: pulse;">Contáctame</button>
+                            </div>    
+                        </div>
+                    </form>
+                </section>
+                <section class="contact__Email pl-xl-5 ml-xl-5 pl-md-3 px-sm-3">
+                    <p class="pl-xl-6 ml-xl-5">También puedes escribirme a:</p>
+                    <p class="contactMailPink pl-xl-6 ml-xl-5">hello@camipi.com</p>
                 </section>
     
-                <section class="contact__Form pl-xl-5 ml-xl-5 pl-md-3">
-                    <!--<form  class="contactFormItems" name="contactForm"  method="post" enctype="multipart/form-data">
-                        <div class="contactFormItemsInputs">
-                            <label for="contactName">Nombre</label>
-                            <input type="text" name="contactName" id="contactName" value="" placeholder="Tu nombre">
-                        </div>
-        
-                        <div class="contactFormItemsInputs">
-                                <label for="contactMail">Email</label>
-                            <input type="text" name="contactMail" id="contactMail" value="" placehoder="Email">
-                        </div>
-    
-                        <input class="contactFormInputs backPink"type="submit" value="Contáctame">
-                    </form>-->
-                    <form class="contact__FormItems d-flex d-sm-block pl-xl-5 ml-xl-5" name="contactForm" method="post" enctype="multipart/form-data">
-                        <div class="form-row contactForm__Items-item">
-                          <div class="col-md-4 mb-3">
-                            <label for="contactName">Nombre</label>
-                            <input type="text" class="form-control is-valid contactFormItemsInputs" name="contactName" id="contactName" placeholder="Nombre" required="">
-                            <div class="valid-feedback">
-                              ¡Perfecto!
-                            </div>
-                          </div>
-                          <div class="col-md-4 mb-3 contact__FormItems-item">
-                            <label for="contactMail">Correo electrónico</label>
-                            <input type="text" class="form-control is-valid contactFormItemsInputs" name="contactMail" id="contactMail" placeholder="Correo electrónico" required="">
-                            <div class="valid-feedback">
-                              ¡Perfecto!
-                            </div>
-                          </div>
-                        <div class="align-self-center mx-2">
-                            <button type="submit" class="contact__FormItems-item btn btn-pink wow animate__ animate__pulse mb-2 px-5 animated" data-toggle="modal" data-target="#ventanaModal" style="visibility: visible; animation-name: pulse;">Contáctame</button>
-                        </div>
-                    
-                </div></form></section>
-    
-                   <!---- <div class="modal fades" id="ventanaModal" tabindex="-1" role="dialog" aria-labelledby="tituloVentana" aria-hidden="true">
-                        <div class="modal.dialog" role="document">
-                            <div class="modal-content">
-                                <div class="modal-header">
-                                    <h4>¡Felicitaciones!</h4>
-                                </div>
-                                <div class="modal-body">
-                                    <div class="alert alert-success">
-                                        <h5><strong>Tus datos se han guardado exitosamente. ¡Muy pronto te contactaré!</strong></h5>
-                                    </div>
-                                </div>
-                                <div class="modal-footer">
-                                    <button class="btn-pink" type="button" data-dismiss="modal">
-                                        Cerrar
-                                    </button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>-->
-                    <section class="contact__Email pl-xl-5 ml-xl-5 pl-md-3">
-                        <p class="pl-xl-5 ml-xl-5">También puedes escribirme a:</p>
-                        <p class="contactMailPink pl-xl-5 ml-xl-5">hello@camipi.com</p>
-                    </section>
-    
-                    <section class="contact__RRSS pl-xl-5 ml-xl-5 pl-md-3">
-                        <p class="pl-xl-5 ml-xl-5">Si eres más de redes, me puedes encontrar en:</p>
-                        <span class="pl-xl-5 ml-xl-5">
-                            <a><img src="../assets/img/instagram.svg" alt="Instagram"></a>
-                            <a><img src="../assets/img/linkedin.svg" alt="Linkedin"></a>
-                            <a><img src="../assets/img/behance.svg" alt="Behance"></a>
-                        </span>
-                    </section>
+                <section class="contact__RRSS pl-xl-5 ml-xl-5 pl-md-3 px-sm-3">
+                    <p class="pl-xl-6 ml-xl-5">Si eres más de redes, me puedes encontrar en:</p>
+                    <span class="pl-xl-6 ml-xl-5">
+                        <a><img class="rrss-img" src="../assets/img/instagram.svg" alt="Instagram"></a>
+                        <a><img class="rrss-img" src="../assets/img/linkedin.svg" alt="Linkedin"></a>
+                        <a><img class="rrss-img" src="../assets/img/behance.svg" alt="Behance"></a>
+                    </span>
+                </section>
             </div>
         </main>
         <footer class="container-fluid">

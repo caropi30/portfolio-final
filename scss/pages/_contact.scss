@@ -5,6 +5,8 @@
     @include navlink;
     @include second-nav;
     @include collapse-primary-color;
+    @include pink-style;
+    @include img-size;
 }
 
 // Medium devices (tablets, 768px and up)
@@ -14,24 +16,32 @@
     @include navlink;
     @include second-nav;
     @include collapse-primary-color;
+    @include pink-style;
+    @include img-size;
 }
 
 // Large devices (desktops, 992px and up)
 @media (min-width: 992px) and (max-width: 1199.98px) {
     @include body-background-isotype;
-    @include header; 
+    @include header;
     @include navlink;
     @include nav-hover;
     @include second-nav;
     @include collapse-base-color;
+    @include main-style-lg;
+    @include pink-style;
+    @include img-size;
 }
 
 // Extra large devices (large desktops, 1200px and up)
 @media (min-width: 1200px) {
     @include body-background-isotype;
-    @include header; 
+    @include contact-header;
     @include navlink;
     @include nav-hover;
     @include second-nav;
     @include collapse-base-color;
+    @include main-style-xl; 
+    @include pink-style;
+    @include img-size;
 }

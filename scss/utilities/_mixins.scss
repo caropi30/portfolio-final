@@ -1,13 +1,17 @@
 
 /*Body*/
-
 @mixin body-background-logo-lg {
-    font-family: $montserrat;
+    padding-top: 350px;
     background-image: url(../assets/img/logo_camipi.svg);
     background-repeat: no-repeat;
+    background-position: center;
     background-color: $base-color;
-
 }
+
+@mixin body-background-logo-rotate {
+    
+}
+
 @mixin body-background-imagotype {
     font-family: $montserrat;
     background-image: url(../assets/img/imagotype_camipi.svg);
@@ -48,6 +52,31 @@
         } 
     }  
 } 
+
+@mixin home-header {
+    .home {
+        &__Header {
+
+        }
+    }
+}
+
+@mixin contact-header {
+    .contactHeader {
+        .navTitle {
+            color: $secondary-color;
+            h2 {
+                padding-left: 17rem;
+                font-size: 1.2rem;
+            }
+            h3 {
+                padding-left: 17rem;
+                font-size: 1rem;
+            }
+        }
+    }
+}
+
 
 @mixin collapse-base-color {
     .collapse {
@@ -93,10 +122,20 @@
 }
 
 /*Main*/
-@mixin main-style {
+@mixin main-style-xl {
     main {
-        padding-left: 3rem;
-        margin-left: 2rem;
+        .pl-xl-6 {
+            padding-left: 21rem;
+        } 
+        color: $secondary-color;
+    }
+}
+
+@mixin main-style-lg {
+    main {
+        .pl-lg-6 {
+            padding-left: 0;
+        } 
         color: $secondary-color;
     }
 }
@@ -108,31 +147,85 @@
     }
 }
 
+
+
 /*Biography Page*/
 
 /*What I Do Page*/
 
 /*Work Page*/
-@mixin work-gallery-grid-bg {
+
+@mixin work-grid-gallery {
+    display: grid;
+}
+
+@mixin work-container-size-xl {
     .work {
-        &__Gallery {
-            &-items tbody{
-                display:grid;
-                grid-template-columns: 100%;
-                grid-template-rows: 50% 50%;
+        &_Gallery {
+            &-items {
+                width: 500px;
+                height: 300px;
             }
         }
-
     }
 }
 
-@mixin work-gallery-grid-md {
-    .work {
-        &__Gallery {
-            &-items tbody tr{
-               display: flex;
-               flex-direction: column; 
-            }
-        }
+@mixin img-work-grid {
+    .modop {
+        width: 100%;
+        background-image: url(../assets/img/modop.png);
+        background-repeat: cover no-repeat;
+        overflow: hidden;
+    }
+    .weemo {
+        width: 100%;
+        background-image: url(../assets/img/weemo.png);
+        background-repeat: cover no-repeat;
+        overflow: hidden;
+    }
+    .mydelivery {
+        width: 100%;
+        background-image: url(../assets/img/mydelivery.png);
+        background-repeat: cover no-repeat;
+        overflow: hidden;
+    }
+    .enelcito {
+        width: 100%;
+        background-image: url(../assets/img/enlcito.png);
+        background-repeat: cover no-repeat;
+        overflow: hidden;
+    }
+    .paygo {
+        width: 100%;
+        background-image: url(../assets/img/paygo.png);
+        background-repeat: cover no-repeat;
+        overflow: hidden;
+    }
+}
+
+
+
+/*Contact Page*/
+
+@mixin pink-style {
+    input{
+        border: 1px solid $primary-color;
+    }
+    .btn-pink {
+        color: $secondary-color;
+        background-color: $primary-color;
+        border: 1px solid $primary-color;
+        font-weight: $bold;
+    }
+    .pink {
+        color: $primary-color;
+        font-weight: $bold;
+    }
+}
+
+@mixin img-size {
+    .rrss-img {
+        width: 60px;
+        margin-left: .5rem;
     }
 }
