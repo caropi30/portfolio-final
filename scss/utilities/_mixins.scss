@@ -4,7 +4,7 @@
     .homeBody {
         background-image: url(../assets/img/logo_camipi.svg);
         background-repeat: no-repeat;
-        background-position: cover;
+        background-position: top center;
         background-color: $base-color;
     }
 }
@@ -81,7 +81,7 @@
 
 @mixin collapse-base-color {
     .collapse {
-        background-color: $base-color;
+        background-color: transparent;
     }
 }
 
@@ -420,5 +420,15 @@
     .rrss-img {
         width: 60px;
         margin-left: .5rem;
+    }
+}
+
+
+/*Footer*/
+@mixin footer-padding-xl {
+    .home {
+        &__Footer {
+            padding-top: 650px;
+        }
     }
 }
