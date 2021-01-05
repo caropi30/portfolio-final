@@ -2,16 +2,16 @@
 /*Body*/
 @mixin body-background-logo-lg {
     .homeBody {
+        max-width: 100%;
+        height: auto;
         background-image: url(../assets/img/logo_camipi.svg);
         background-repeat: no-repeat;
         background-position: top center;
         background-color: $base-color;
+        background-size: contain;
     }
 }
 
-@mixin body-background-logo-rotate {
-    
-}
 
 @mixin body-background-imagotype {
     font-family: $montserrat;
@@ -53,14 +53,6 @@
         } 
     }  
 } 
-
-/*@mixin home-header {
-    .home {
-        &__Header {
-
-        }
-    }
-}*/
 
 @mixin contact-header {
     .contactHeader {
@@ -148,7 +140,14 @@
     }
 }
 
-
+/*Index*/
+@mixin home-main-logo {
+   main {
+       img{
+            transform: rotate(-90deg);
+        }
+    } 
+}
 
 /*Biography Page*/
 

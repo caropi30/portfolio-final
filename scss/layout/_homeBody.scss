@@ -3,21 +3,22 @@
 @media (min-width: 576px) and (max-width: 767.98px) {
     .homeBody {
         @include body-background-img-none;
-    }
+    }    
 }
 
 // Medium devices (tablets, 768px and up)
 @media (min-width: 768px) and (max-width: 991.98px) {
-    .homeBody  {
+    .homeBody {
         @include body-background-img-none;
     }
+    @include home-main-logo;
+
 }
 
 // Large devices (desktops, 992px and up)
 @media (min-width: 992px) and (max-width: 1199.98px) {
-    .homeBody  {
-        @include body-background-img-none;
-    }
+    @include body-background-logo-lg;
+    @include footer-padding-xl;
 }
 
 // Extra large devices (large desktops, 1200px and up)
