@@ -149,6 +149,16 @@
     } 
 }
 
+@mixin home-main-img {
+    .home {
+        &__Content {
+            img {
+                display: none;
+            }
+        }
+    }
+}
+
 /*Biography Page*/
 
 /*What I Do Page*/
