@@ -1,3 +1,13 @@
+// Extra small devices (landscape phones, 365px and up)
+@media (min-width: 365px) and (max-width: 575.98px) {
+    header {
+        @include header; 
+        @include navlink;
+        @include second-nav;
+        @include collapse-primary-color;
+    }
+}
+
 // Small devices (landscape phones, 576px and up)
 @media (min-width: 576px) and (max-width: 767.98px) {
     header {

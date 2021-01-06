@@ -1,3 +1,16 @@
+// Extra small devices (landscape phones, 365px and up)
+@media (min-width: 365px) and (max-width: 575.98px) {
+    @include body-background-img-none;
+    @include header; 
+    @include navlink;
+    @include second-nav;
+    @include collapse-primary-color;
+    @include pink-style;
+    @include btn-input;
+    @include pink;
+    @include img-size;
+}
+
 // Small devices (landscape phones, 576px and up)
 @media (min-width: 576px) and (max-width: 767.98px) {
     @include body-background-img-none;
@@ -6,6 +19,8 @@
     @include second-nav;
     @include collapse-primary-color;
     @include pink-style;
+    @include btn-input;
+    @include pink;
     @include img-size;
 }
 

@@ -54,6 +54,30 @@
     }  
 } 
 
+@mixin contact-header-xs {
+    .contact {
+        &__Header{
+            width: 100%;
+            padding-top: 30px;
+            padding-right: 15px;
+            padding-left: 40px;
+            margin-right: auto;
+            margin-left: auto;
+
+            h2 {
+                color: #E91E63;
+                font-size: 1.5rem;
+            }
+            
+            h3 {
+                color: #fff;
+                font-size: 1rem;
+            }
+        }
+    }
+    
+}
+
 @mixin contact-header {
     .contactHeader {
         .navTitle {
@@ -119,6 +143,10 @@
     main {
         .pl-xl-6 {
             padding-left: 21rem;
+        } 
+
+        .pl-xl-7 {
+            padding-left: 23rem;
         } 
         color: $secondary-color;
     }
@@ -419,9 +447,13 @@
         border: 1px solid $primary-color;
         font-weight: $bold;
     }
+}
+
+@mixin pink {
     .pink {
         color: $primary-color;
         font-weight: $bold;
+        width: 100%;
     }
 }
 
@@ -429,6 +461,18 @@
     .rrss-img {
         width: 60px;
         margin-left: .5rem;
+    }
+}
+
+@mixin btn-input {
+    .contact {
+        &__FormItems {
+            &-item {
+                .btn-input {
+                    width: 100%;
+                }
+            }
+        }
     }
 }
 

@@ -1,3 +1,32 @@
+// Extra small devices (landscape phones, 365px and up)
+@media (min-width: 365px) and (max-width: 575.98px){
+    .whatIDo {
+        padding-top: 1.5rem;
+
+        &__Title {
+            display: block;
+
+            h2{
+                display: inline-flex;
+                padding-right: 1rem;
+                font-size: 3rem;
+                font-weight: $bold;
+        
+            }
+        }
+
+        &__Items {
+            &-Pink {
+                color: $primary-color;
+            }
+
+            &-Item {
+                padding-top: 4rem;
+            }
+        }      
+    }
+}
+
 // Small devices (landscape phones, 576px and up)
 @media (min-width: 576px) and (max-width: 767.98px) {
     .whatIDo {

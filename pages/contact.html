@@ -18,10 +18,10 @@
         <link rel="stylesheet" type="text/css" href="../css/animate.css">
     </head>
     <body class="contactBody">
-        <header class="contactHeader container-fluid pl-xl-5 ml-xl-5 ml-lg-5 pl-lg-1 px-md-5 mx-md-3 my-md-4 py-md-5 px-sm-5 py-sm-5">
-            <div class="row d-flex d-xl-flex d-lg-flex d-md-flex flex-column px-xl-5 mx-xl-5 px-lg-1 pr-lg-5 pl-md-0 ml-md-0 pl-sm-4">
-                <nav class="navbar navbar-expand-lg d-flex row justify-content-between px-xl-5 mx-xl-5 pl-lg-1 pr-lg-5 mr-lg-3 pt-lg-5 ml-lg-5 pl-sm-1">
-                    <div class="navTitle pl-lg-1">
+        <header class="contactHeader container-fluid pl-xl-5 ml-xl-3 ml-lg-5 pl-lg-1 px-md-5 mx-md-3 my-md-4 py-md-5 px-sm-5 py-sm-5 pl-4">
+            <div class="row d-flex d-xl-flex d-lg-flex d-md-flex flex-column pl-xl-5 ml-xl-5 px-lg-1 pr-lg-5 pl-md-0 ml-md-0 pl-sm-4">
+                <nav class="navbar navbar-expand-lg d-flex row justify-content-between px-xl-5 ml-xl-5 pl-lg-1 pr-lg-5 mr-lg-3 pt-lg-5 ml-lg-5 pl-sm-1 px-4 pt-5">
+                    <div class="navTitle pl-xl-4 pl-lg-1 pl-3">
                         <h2>Camila Pirela Petit</h2>
                         <h3>Visual Designer</h3>
                     </div>
@@ -48,39 +48,33 @@
                         </ul>
                       </div>
                 </nav> 
-                <nav class="secondNavbar animate__animated animate__backInLeft">
+                <nav class="secondNavbar animate__animated animate__backInLeft pl-3 pb-5">
                     <span>←</span>
                     <a class="nav-link" href="../index.html">Home</a>
                     <span> / </span>                          
-                    <a class="nav-link active" href="../pages/style_bio.html">Biography</a>                           
-                </nav>   
+                    <a class="nav-link active" href="../pages/contact.html">Contact</a>                           
+                </nav> 
             </div>
         </header>
-        <main class="container-fluid contact animate__animated animate__backInRight">
-            <div class="row contact__Info row d-block col-xl-11 pl-lg-3 pt-lg-5 ml-lg-5 pl-sm-1 ml-5 px-md-3 mx-md-4 mx-sm-0">
-                <section class="contact__Title col-xl-11 pl-xl-6 ml-xl-5 mr-xl-0">
-                    <h2 class="pl-xl-5 ml-xl-5">Let's talk<span>!</span></h2>
-                    <p class="pl-xl-5 ml-xl-5">Si necesitas más información sobre servicios y/o asesorías, déjame tus datos y me contactaré contigo.</p>
+        <main class="container-fluid contact animate__animated animate__backInRight pl-xl-3 pl-1 pr-4">
+            <div class="row contact__Info row d-block pl-lg-3 pt-lg-5 ml-lg-5 pl-sm-5 px-md-3 mx-md-4 mx-sm-0 pr-sm-1 pl-1 pr-5 ml-5">
+                <section class="contact__Title pl-xl-7 ml-xl-5 mr-xl-0 pl-sm-3 pl-1">
+                    <h2 class="pl-xl-7 ml-xl-5">Let's talk<span>!</span></h2>
+                    <p class="pl-xl-7 ml-xl-5">Si necesitas más información sobre servicios y/o asesorías, déjame tus datos y me contactaré contigo.</p>
                 </section>   
-                <section class="contact__Form pl-xl-5 ml-xl-5 pl-md-3 px-sm-3">
+                <section class="contact__Form pb-5 pl-xl-5 ml-xl-5 pl-md-3 px-sm-3">
                     <form class="contact__FormItems d-flex d-sm-block pl-xl-6 ml-xl-5" name="contactForm" method="POST" action="" enctype="multipart/form-data">
                         <div class="form-row contactForm__Items-item">
                             <div class="col-md-4 mb-3">
                                 <label class="pink" for="contactName">Nombre</label>
                                 <input type="text" class="form-control is-valid contactFormItemsInputs" name="contactName" id="contactName" placeholder="Nombre" required="">
-                                <div class="valid-feedback pink">
-                                ¡Perfecto!
-                                </div>
                             </div>
                             <div class="col-md-4 mb-3 contact__FormItems-item">
                                 <label class="pink" for="contactMail">Correo electrónico</label>
                                 <input type="text" class="form-control is-valid contactFormItemsInputs" name="contactMail" id="contactMail" placeholder="Correo electrónico" required="">
-                                <div class="valid-feedback pink">
-                                    ¡Perfecto!
-                                </div>
                             </div>
-                            <div class="align-self-center ml-2">
-                                <button type="submit" class="contact__FormItems-item btn btn-pink wow animate__animated animate__heartBeat mb-2 px-5    animated" data-toggle="modal" data-target="#ventanaModal" style="visibility: visible; animation-name: pulse;">Contáctame</button>
+                            <div class="align-self-center mt-3 ml-2 btn-input pink">
+                                <button type="submit" class="contact__FormItems-item btn btn-pink wow animate__ animate__heartBeat px-4" data-toggle="modal" data-target="#ventanaModal" style="visibility: visible; animation-name: pulse; width: 100%;">Contáctame</button>
                             </div>    
                         </div>
                     </form>

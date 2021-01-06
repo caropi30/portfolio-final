@@ -1,7 +1,16 @@
+// Extra small devices (landscape phones, 365px and up)
+@media (min-width: 365px) and (max-width: 575.98px) {
+    .contactBody {
+        @include body-background-img-none;
+        @include contact-header-xs;
+    }
+}
+
 // Small devices (landscape phones, 576px and up)
 @media (min-width: 576px) and (max-width: 767.98px) {
     .contactBody {
         @include body-background-img-none;
+        @include contact-header-xs;
     }
 }
 
