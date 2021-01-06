@@ -197,6 +197,61 @@
     display: grid;
 }
 
+@mixin img-work-grid-xs {
+    .work {
+        &__GalleryItems {
+            &-row1 {
+                display: flex;
+                flex-direction: column;
+                justify-items: center;
+                .modop {
+                    width: 325px;
+                    height: 300px;
+                    background-image: url(../assets/img/modop.png);
+                    background-repeat: cover no-repeat;
+                    overflow: hidden;
+                    border-radius: 25px 25px 0 0;
+                }
+                .weemo {
+                    width: 325px;
+                    height: 300px;
+                    background-image: url(../assets/img/weemo.png);
+                    background-repeat: cover no-repeat;
+                    overflow: hidden;
+                }
+            }
+
+            &-row2 {
+                .mydelivery {
+                    width: 325px;
+                    height: 300px;
+                    background-image: url(../assets/img/mydelivery.png);
+                    background-repeat: cover no-repeat;
+                    overflow: hidden;
+                    align-self: center;
+                }
+
+                .enelcito {
+                    width: 325px;
+                    height: 300px;
+                    background-image: url(../assets/img/enelcito.png);
+                    background-repeat: cover no-repeat;
+                    overflow: hidden;
+                }
+                .paygo {
+                    width: 325px;
+                    height: 300px;
+                    background-image: url(../assets/img/paygo.png);
+                    background-repeat: cover no-repeat;
+                    overflow: hidden;
+                    border-radius: 0 0 25px 25px;
+                }
+            }
+            
+        }
+    }
+}
+
 @mixin img-work-grid-sm {
     .work {
         &__GalleryItems {

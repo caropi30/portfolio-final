@@ -1,6 +1,6 @@
 // Extra small devices (landscape phones, 365px and up)
 @media (min-width: 365px) and (max-width: 575.98px) {
-    @include img-work-grid-sm;
+    @include img-work-grid-xs;
 }
 
 // Small devices (landscape phones, 576px and up)
