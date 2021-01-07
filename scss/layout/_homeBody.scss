@@ -3,14 +3,14 @@
     .homeBody {
         @include body-background-img-none;
         @include body-background-logo-sm;  
-        @include home-nav-md; 
+        @include home-nav-sm; 
     }  
 }
 // Small devices (landscape phones, 576px and up)
 @media (min-width: 576px) and (max-width: 767.98px) {
     .homeBody {
         @include body-background-img-none;
-        @include home-nav-md;
+        @include home-nav-sm;
         @include body-background-logo-sm;   
     }
 }

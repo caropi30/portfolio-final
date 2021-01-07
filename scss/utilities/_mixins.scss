@@ -91,6 +91,16 @@
     }
 }
 
+@mixin home-nav-sm {
+    .homeBody {
+        .navTitle {
+            h2 {
+                font-weight: $regular;
+            }
+        }
+    }
+}
+
 @mixin header {
     header {
         margin: 2rem;
@@ -229,32 +239,201 @@
     main {
         .home {
             &__Content {
-                &-item { 
+                &-logo { 
                     max-width: 100%;
-                    height: auto;
+                    height: 750px;
                     background-image: url(../assets/img/logo-camipi-v.svg);
                     background-repeat: no-repeat;
                     background-position: top center;
-                    background-color: $base-color;
+                    background-color: #306;
                     background-size: cover;
+                    padding-top: 2rem;
+
                 }
             }
         }
     }
 }
 
-
-/*Biography Page*/
-
-/*What I Do Page*/
-
 /*Work Page*/
+@mixin work-grid-gallery-sm {
+    .work {
+        &__GalleryItems {
+            display: grid;
+            grid-template-columns: 100%;
+            width: 300px;
 
-@mixin work-grid-gallery {
-    display: grid;
+            .modop {
+                background-image: url(../assets/img/modop.png);
+                background-repeat: cover no-repeat;
+                overflow: hidden;
+                height: 300px;
+                cursor: pointer;
+                border-radius: 25px 25px 0 0;
+            }
+
+            .weemo {
+                background-image: url(../assets/img/weemo.png);
+                background-repeat: cover no-repeat;
+                overflow: hidden;
+                height: 300px;
+                cursor: pointer;
+            }
+
+            .mydelivery {
+                background-image: url(../assets/img/mydelivery.png);
+                background-repeat: cover no-repeat;
+                overflow: hidden;
+                height: 300px;
+                cursor: pointer;
+            }
+
+            .enelcito {
+                background-image: url(../assets/img/enelcito.png);
+                background-repeat: cover no-repeat;
+                overflow: hidden;
+                height: 300px;
+                cursor: pointer;
+            }
+
+            .paygo {
+                background-image: url(../assets/img/paygo.png);
+                background-repeat: cover no-repeat;
+                overflow: hidden;
+                height: 300px;
+                cursor: pointer;
+                border-radius: 0 0 25px 25px ;
+            }
+
+        }
+    }
+
+
 }
 
-@mixin img-work-grid-xs {
+@mixin work-grid-gallery-md {
+    .work {
+        &__GalleryItems {
+            display: grid;
+            grid-template-columns: 100%;
+            width: 600px;
+
+            .modop {
+                background-image: url(../assets/img/modop.png);
+                background-repeat: cover no-repeat;
+                overflow: hidden;
+                height: 300px;
+                cursor: pointer;
+                border-radius: 25px 25px 0 0;
+            }
+
+            .weemo {
+                background-image: url(../assets/img/weemo.png);
+                background-repeat: cover no-repeat;
+                overflow: hidden;
+                height: 300px;
+                cursor: pointer;
+            }
+
+            .mydelivery {
+                background-image: url(../assets/img/mydelivery.png);
+                background-repeat: cover no-repeat;
+                overflow: hidden;
+                height: 300px;
+                cursor: pointer;
+            }
+
+            .enelcito {
+                background-image: url(../assets/img/enelcito.png);
+                background-repeat: cover no-repeat;
+                overflow: hidden;
+                height: 300px;
+                cursor: pointer;
+            }
+
+            .paygo {
+                background-image: url(../assets/img/paygo.png);
+                background-repeat: cover no-repeat;
+                overflow: hidden;
+                height: 300px;
+                cursor: pointer;
+                border-radius:0 0 25px 25px;
+            }
+
+        }
+    }
+
+
+}
+
+@mixin work-grid-gallery-lg {
+    .work {
+        &__GalleryItems {
+            display: grid;
+            grid-template-rows: repeat(2, 1fr);
+            grid-template-columns: repeat(6, 1fr);
+
+            .modop {
+                grid-column-start: 1;
+                grid-column-end: 4;
+                background-image: url(../assets/img/modop.png);
+                background-repeat: cover no-repeat;
+                overflow: hidden;
+                height: 300px;
+                cursor: pointer;
+                border-radius: 25px 0 0 0;
+            }
+
+            .weemo {
+                grid-column-start: 4;
+                grid-column-end: 7;
+                background-image: url(../assets/img/weemo.png);
+                background-repeat: cover no-repeat;
+                overflow: hidden;
+                height: 300px;
+                cursor: pointer;
+                border-radius: 0  25px 0 0;
+            }
+
+            .mydelivery {
+                grid-column-start: 1;
+                grid-column-end: 3;
+                background-image: url(../assets/img/mydelivery.png);
+                background-repeat: cover no-repeat;
+                overflow: hidden;
+                height: 300px;
+                cursor: pointer;
+                border-radius: 0  0  0 25px;
+            }
+
+            .enelcito {
+                grid-column-start: 3;
+                grid-column-end: 5;
+                background-image: url(../assets/img/enelcito.png);
+                background-repeat: cover no-repeat;
+                overflow: hidden;
+                height: 300px;
+                cursor: pointer;
+                
+            }
+
+            .paygo {
+                grid-column-start: 5;
+                grid-column-end: 7;
+                background-image: url(../assets/img/paygo.png);
+                background-repeat: cover no-repeat;
+                overflow: hidden;
+                height: 300px;
+                cursor: pointer;
+                border-radius:0 0 25px 25px;
+                border-radius: 0  0  25px 0; 
+            }
+
+        }
+    }
+} 
+
+/*@mixin img-work-grid-xs {
     .work {
         &__GalleryItems {
             &-row1 {
@@ -517,7 +696,7 @@
             }
 
             &-row2 {
-                width: 1201px;
+                width: 1202px;
                 display: grid;
                 grid-template-rows: 1fr;
                 grid-template-columns: 33.3% 33.3% 33.3%;
@@ -554,7 +733,7 @@
             }
         }
     }
-}
+}/*
 
 
 
