@@ -168,24 +168,24 @@
     }
 }
 
-/*Index*/
-@mixin home-main-logo {
-   main {
-       img{
-            transform: rotate(-90deg);
-        }
-    } 
-}
-
-@mixin home-main-img {
-    .home {
-        &__Content {
-            img {
-                display: none;
+@mixin body-background-logo-sm {
+    main {
+        .home {
+            &__Content {
+                &-item { 
+                    max-width: 100%;
+                    height: auto;
+                    background-image: url(../assets/img/logo-camipi-v.svg);
+                    background-repeat: no-repeat;
+                    background-position: top center;
+                    background-color: $base-color;
+                    background-size: cover;
+                }
             }
         }
     }
 }
+
 
 /*Biography Page*/
 
