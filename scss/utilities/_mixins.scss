@@ -35,6 +35,29 @@
 }
 
 /*Header / Navigation*/
+@mixin home-nav-lg {
+    .homeBody {
+        .navTitle {
+            h2 {
+                font-size: 3rem;
+                font-weight: $bold;
+            }
+        }
+        .navSecondTitle {
+            h2 {
+                font-size: 2rem;
+                font-weight: $bold;
+            } 
+    
+            h3{
+                font-size: 1.2rem;
+                font-weight: $bold;
+            }
+        }
+    }
+
+}
+
 @mixin header {
     header {
         margin: 2rem;
@@ -375,8 +398,9 @@
                     background-repeat: cover no-repeat;
                     overflow: hidden;
                     border-radius: 25px 0 0 0;
+                    cursor: pointer;
                 }
-                
+
                 .weemo {
                     width: 450px;
                     height: 300px;
@@ -384,6 +408,8 @@
                     background-repeat: cover no-repeat;
                     overflow: hidden;
                     border-radius: 0 25px 0 0;
+                    cursor: pointer;
+                    transition: height 2s;
                 }
             }
 
@@ -401,6 +427,7 @@
                     background-repeat: cover no-repeat;
                     overflow: hidden;
                     border-radius: 0 0 0 25px;
+                    cursor: pointer;
                 }
 
                 .enelcito {
@@ -409,6 +436,7 @@
                     background-image: url(../assets/img/enelcito.png);
                     background-repeat: cover no-repeat;
                     overflow: hidden;
+                    cursor: pointer;
                 }
                 .paygo {
                     grid-area: paygo;
@@ -417,6 +445,7 @@
                     background-repeat: cover no-repeat;
                     overflow: hidden;
                     border-radius: 0 0 25px 0;
+                    cursor: pointer;
                 }
                 
             }
@@ -438,6 +467,7 @@
                     background-repeat: cover no-repeat;
                     overflow: hidden;
                     border-radius: 25px 0 0 0;
+                    cursor: pointer;
                 }
 
 
@@ -448,6 +478,7 @@
                     background-repeat: cover no-repeat;
                     overflow: hidden;
                     border-radius: 0 25px 0 0;
+                    cursor: pointer;
                 }
             }
 
@@ -466,6 +497,7 @@
                     overflow: hidden;
                     align-self: center;
                     border-radius: 0 0 0 25px;
+                    cursor: pointer;
                 }
 
                 .enelcito {
@@ -474,6 +506,7 @@
                     background-image: url(../assets/img/enelcito.png);
                     background-repeat: cover no-repeat;
                     overflow: hidden;
+                    cursor: pointer;
                 }
                 .paygo {
                     grid-area: paygo;
@@ -482,6 +515,7 @@
                     background-repeat: cover no-repeat;
                     overflow: hidden;
                     border-radius: 0 0 25px 0;
+                    cursor: pointer;
                 }
             }
         }
