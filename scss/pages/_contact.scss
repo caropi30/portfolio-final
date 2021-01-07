@@ -9,6 +9,7 @@
     @include btn-input;
     @include pink;
     @include img-size;
+    @include strong;
 }
 
 // Small devices (landscape phones, 576px and up)
@@ -22,6 +23,7 @@
     @include btn-input;
     @include pink;
     @include img-size;
+    @include strong;
 }
 
 // Medium devices (tablets, 768px and up)
@@ -46,6 +48,7 @@
     @include main-style-lg;
     @include pink-style;
     @include img-size;
+    @include strong;
 }
 
 // Extra large devices (large desktops, 1200px and up)
@@ -59,4 +62,5 @@
     @include main-style-xl; 
     @include pink-style;
     @include img-size;
+    @include strong;
 }

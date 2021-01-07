@@ -1,25 +1,30 @@
 // Extra small devices (landscape phones, 200px and up)
 @media (min-width: 200px) and (max-width: 575.98px) {
     @include img-work-grid-xs;
+    @include strong;
 }
 
 // Small devices (landscape phones, 576px and up)
 @media (min-width: 576px) and (max-width: 767.98px) {
     @include img-work-grid-sm;
+    @include strong;
 }
 
 // Medium devices (tablets, 768px and up)
 @media (min-width: 768px) and (max-width: 991.98px) {
     @include img-work-grid-md;
+    @include strong;
 } 
 
 // Large devices (desktops, 992px and up)
 @media (min-width: 992px) and (max-width: 1199.98px) {
     @include img-work-grid-lg;
+    @include strong;
 }
 
 // Extra large devices (large desktops, 1200px and up)
 @media (min-width: 1200px) {
     @include img-work-grid-xl;
+    @include strong;
 }
 

@@ -35,7 +35,7 @@
 }
 
 /*Header / Navigation*/
-@mixin home-nav-lg {
+@mixin home-nav-xl {
     .homeBody {
         .navTitle {
             h2 {
@@ -58,6 +58,39 @@
 
 }
 
+@mixin home-nav-lg {
+    .homeBody {
+        .navTitle {
+            h2 {
+                font-size: 1.7rem;
+                font-weight: $bold;
+            }
+        }
+        .navSecondTitle {
+            h2 {
+                font-size: 1rem;
+                font-weight: $bold;
+            } 
+    
+            h3{
+                font-size: 1.2rem;
+                font-weight: $bold;
+            }
+        }
+    }
+
+}
+
+@mixin home-nav-md {
+    .homeBody {
+        .navTitle {
+            h2 {
+                font-weight: $bold;
+            }
+        }
+    }
+}
+
 @mixin header {
     header {
         margin: 2rem;
@@ -67,7 +100,8 @@
     
         h2 {
             color: #E91E63;
-            font-size: 1.5rem;
+            font-size: 1.7rem;
+            font-weight: $bold;
         }
         
         h3 {
@@ -572,5 +606,12 @@
         &__Footer {
             padding-top: 650px;
         }
+    }
+}
+
+/*Other styles*/
+@mixin strong {
+    strong {
+        color: $primary-color;
     }
 }

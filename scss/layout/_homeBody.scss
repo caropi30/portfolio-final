@@ -2,13 +2,15 @@
 @media (min-width: 200px) and (max-width: 575.98px) {
     .homeBody {
         @include body-background-img-none;
-        @include body-background-logo-sm;   
+        @include body-background-logo-sm;  
+        @include home-nav-md; 
     }  
 }
 // Small devices (landscape phones, 576px and up)
 @media (min-width: 576px) and (max-width: 767.98px) {
     .homeBody {
         @include body-background-img-none;
+        @include home-nav-md;
         @include body-background-logo-sm;   
     }
 }
@@ -16,7 +18,9 @@
 // Medium devices (tablets, 768px and up)
 @media (min-width: 768px) and (max-width: 991.98px) {
     .homeBody {
+        @include body-background-img-none;
         @include body-background-logo-sm;
+        @include home-nav-md;
     }
 
 
@@ -32,6 +36,6 @@
 // Extra large devices (large desktops, 1200px and up)
 @media (min-width: 1200px) {
     @include body-background-logo-lg;
-    @include home-nav-lg;
+    @include home-nav-xl;
     @include footer-padding-xl;
 }
