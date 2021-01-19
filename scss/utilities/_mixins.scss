@@ -256,12 +256,67 @@
 }
 
 /*Work Page*/
-@mixin work-grid-gallery-sm {
+@mixin work-grid-gallery-xs {
     .work {
         &__GalleryItems {
             display: grid;
             grid-template-columns: 100%;
             width: 300px;
+
+            .modop {
+                background-image: url(../assets/img/modop.png);
+                background-repeat: cover no-repeat;
+                overflow: hidden;
+                height: 300px;
+                cursor: pointer;
+                border-radius: 25px 25px 0 0;
+            }
+
+            .weemo {
+                background-image: url(../assets/img/weemo.png);
+                background-repeat: cover no-repeat;
+                overflow: hidden;
+                height: 300px;
+                cursor: pointer;
+            }
+
+            .mydelivery {
+                background-image: url(../assets/img/mydelivery.png);
+                background-repeat: cover no-repeat;
+                overflow: hidden;
+                height: 300px;
+                cursor: pointer;
+            }
+
+            .enelcito {
+                background-image: url(../assets/img/enelcito.png);
+                background-repeat: cover no-repeat;
+                overflow: hidden;
+                height: 300px;
+                cursor: pointer;
+            }
+
+            .paygo {
+                background-image: url(../assets/img/paygo.png);
+                background-repeat: cover no-repeat;
+                overflow: hidden;
+                height: 300px;
+                cursor: pointer;
+                border-radius: 0 0 25px 25px ;
+            }
+
+        }
+    }
+
+
+}
+
+@mixin work-grid-gallery-sm {
+    .work {
+        &__GalleryItems {
+            display: grid;
+            grid-template-columns: 100%;
+            width: 500px;
 
             .modop {
                 background-image: url(../assets/img/modop.png);
@@ -475,6 +530,20 @@
     }
 }
 
+@mixin rrss {
+    .contact {
+        &__RRSS {
+            ul {
+                list-style: none;
+                li {
+                    padding-left: 5px;
+                    cursor: pointer;
+                }
+            }
+        }
+    } 
+}
+
 
 /*Footer*/
 @mixin footer-padding-xl {
@@ -489,5 +558,11 @@
 @mixin strong {
     strong {
         color: $primary-color;
+    }
+}
+
+@mixin breadcrums {
+    .breadcrumb {
+        background: transparent;
     }
 }
